@@ -1,0 +1,78 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #EAE7DF;
+  color: #1F2A44;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #1F2A44;
+  color: #EAE7DF;
+  padding: 16px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav a {
+  color: #EAE7DF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Layout */
+.container {
+  padding: 16px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  margin: 12px 0;
+  border-left: 4px solid #B08D57;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #B08D57;
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1F2A44;
+  color: #EAE7DF;
+  margin-top: 30px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+}
